@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Sankhadip Sen">
+    <meta name="generator" content="Hugo 0.82.0">
+    <script src="./static/assets/js/apiGet.js"></script>
+    <title>Corona Tracker</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+  <link href="../static/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-1 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md mb-0">Corona Tracker</h3>
+      <!-- <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav>   -->
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h2>Select the state you wish to know about.</h2>
+    <br>
+    <hr>
+    <!-- <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div> -->
+    <!-- <form action="" method=""> -->
+      <div class="form-items-wrapper">
+        <div class="form-item-wrapper">
+          <select for="state-name" id="state_name" name="stateName">
+            <optgroup label="Select One">
+              <option>Andaman and Nicobar Islands</option>
+              <option>Andhra Pradesh</option>
+              <option>Arunachal Pradesh</option>
+              <option>Assam</option>
+              <option>Bihar</option>
+              <option>Chandigarh</option>
+              <option>Chhattisgarh</option>
+              <option>Dadra and Nagar Haveli and Daman and Diu</option>
+              <option>Delhi</option>
+              <option>Goa</option>
+              <option>Gujarat</option>
+              <option>Haryana</option>
+              <option>Himachal Pradesh</option>
+              <option>Jammu and Kashmir</option>
+              <option>Jharkhand</option>
+              <option>Karnataka</option>
+              <option>Kerala</option>
+              <option>Ladakh</option>
+              <option>Lakshadweep</option>
+              <option>Madhya Pradesh</option>
+              <option>Maharashtra</option>
+              <option>Manipur</option>
+              <option>Meghalaya</option>
+              <option>Mizoram</option>
+              <option>Nagaland</option>
+              <option>Odisha</option>
+              <option>Puducherry</option>
+              <option>Punjab</option>
+              <option>Rajasthan</option>
+              <option>Sikkim</option>
+              <option>Tamil Nadu</option>
+              <option>Telangana</option>
+              <option>Tripura</option>
+              <option>Uttar Pradesh</option>
+              <option>Uttarakhand</option>
+              <option>West Bengal</option>
+            </optgroup>
+          </select>
+        </div>
+        <br><br><br><br>
+        <div class="form-item-wrapper">
+          <button type="submit" class="btn btn-light btn-lg search-btn" onclick="getData()">Search</button>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="disp-items-wrapper">
+        <div class="disp-item-wrapper">
+          <div class="disp-item-wrapper">
+            <label for="active-lab" id="active-lab">Total active cases of Corona in India:- </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="active-render" id="active-render"></label>
+          </div>
+          <br>
+          <label for="revover-lab" id="recover-lab">Total recovered from Corona in India:- </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="recover-render" id="recover-render"></label>
+        </div>
+        <br>
+        <div class="disp-item-wrapper">
+          <label for="death-lab" id="death-lab">Total deaths due to Corona in India:- </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="death-render" id="death-render"></label>
+        </div>
+        <br>
+        <div class="disp-item-wrapper">
+          <label for="total-lab" id="total-lab">Current Total cumulative data for India:- </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="total-render" id="total-render"></label>
+        </div>
+        <br>
+      </div>
+    <!-- </form> -->
+  </main>
+
+  <footer class="mt-auto">
+    <p class="ftr">COVID-19 tracker project for educational purposes by Sankhadip Sen </p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>
